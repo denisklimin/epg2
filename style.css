@@ -250,6 +250,11 @@ img {
         flex-direction: column;
     }
 
+    .back-box {
+        width: 100%;
+        margin: -50px -50px;
+    }
+
     .hiw-table {
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
