@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #6A6A6A;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    padding: 15px 0;
+}
+
+.menu-inner {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 50px;
+}
+
+.menu li a {
+    font-size: 18px;
+    color: #6A6A6A;
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-left: 58px;
+    font-size: 18px;
+    color: #E34040;
+    text-transform: uppercase;
+    border: 1px solid #E34040;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 17px 39px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* ++++++ */
+
+.main {
+    background: url(./assets/img/Rectangle\ 2.jpg) no-repeat center top / cover;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    padding: 180px 0;
+}
+
+.main-title {
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #2BCCDB;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    width: 220px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background: url(./assets/img/arrow-1.svg) no-repeat right 30px top 50%;
+    background-color: #2BCCDB;
+    cursor: pointer;
+    padding: 20px 70px 20px 30px;
+}
+
+/* ++++++ */
+
+.points-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    padding: 80px 0;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.title-h3 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #353535;
+}
+
+.box span {
+    font-size: 20px;
+    font-weight: 200;
+    color: #6A6A6A;
+}
+
+.box span a {
+    font-weight: 600;
+    color: #E34040;
+    text-decoration: underline;
+}
+
+/* ++++++ */
+
+/* .adv-left {
+    font-size: 54px;
+    font-weight: 200;
+    line-height: 50px;
+    color: white;
+    position: absolute;
+    margin-left: -100px;
+    transform: rotate(-90deg);
+    margin-top: 200px;
+} */
+
+.adv-content {
+    display: flex;
+    gap: 65px;
+    margin: 70px 0;
+}
+
+.back-box {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    background-color: #BEECF0;
+    z-index: -1;
+    margin: -50px -50px;
+}
+
+img {
+    max-width: 690px;
+}
+
+.adv-texts {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 54px;
+    font-weight: 200;
+    line-height: 50px;
+    color: #353535;
+    margin-bottom: 40px;
+}
+
+/* ++++++ */
+
+.hiw-wrap {
+    margin: 90px 0 ;
+}
+
+.hiw-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.hiw-box {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 300px;
+}
+
+.hiw-box-title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.title-h3-hiw {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #2BCCDB;
+}
+
+@media screen and (max-width: 1140px) {
+    .menu,
+    .btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .points-table {
+        grid-template-columns: none;
+        gap: 30px;
+    }
+
+    .box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .adv-content {
+        flex-direction: column;
+    }
+
+    .hiw-table {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        min-width: 320px;
+    }
+
+    .main-content {
+        padding: 25px 0 75px;
+        gap: 12rem;
+    }
+
+    .main-title {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 50px;
+        color: #2BCCDB;
+        margin-bottom: 0;
+    }
+
+    .back-box {
+        max-height: 300px;
+    }
+
+    .hiw-table {
+        grid-template-columns: none;
+        grid-gap: 40px;
+    }
+}
