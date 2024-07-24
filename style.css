@@ -256,9 +256,9 @@ img {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
     .container {
-        min-width: 320px;
+        min-width: 375px;
     }
 
     .main-content {
